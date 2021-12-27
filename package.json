@@ -5,9 +5,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "style:all": "npm run style:lint && npm run style:prettier",
+    "style:all": "npm run style:lint && npm run style:prettier && npm run check-types",
     "style:lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "style:prettier": "npx prettier --check '**/*.{js,jsx,ts,tsx}'",
+    "check-types": "tsc",
     "make-pretty": "npx prettier --write '**/*.{js,jsx,ts,tsx}'",
     "prepare": "npx husky install"
   },
